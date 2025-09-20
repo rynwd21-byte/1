@@ -1,0 +1,28 @@
+{
+  "name": "cfb-sim-vercel-pro-full-pwa-v2",
+  "version": "4.8.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "vercel-build": "next build"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "papaparse": "5.4.1",
+    "cheerio": "1.0.0-rc.12",
+    "@vercel/kv": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.66",
+    "@types/react-dom": "18.2.22"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
