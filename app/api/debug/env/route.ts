@@ -1,0 +1,2 @@
+export const runtime = 'nodejs';
+import { NextResponse } from 'next/server'; export async function GET(){ return NextResponse.json({ has_CFBD_KEY:Boolean(process.env.CFBD_API_KEY), base_url:process.env.NEXT_PUBLIC_BASE_URL||null }); }

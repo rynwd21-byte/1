@@ -1,0 +1,2 @@
+export const runtime = 'nodejs';
+import { NextRequest, NextResponse } from 'next/server';  function resolveBase(req:NextRequest){try{const envBase=process.env.NEXT_PUBLIC_BASE_URL;if(envBase&&envBase.startsWith('http'))return envBase.replace(/\/$/,'');const url=new URL(req.url);return url.origin;}catch{return'';}} export async function GET(req:NextRequest){return NextResponse.json({detectedBase:resolveBase(req),envBase:process.env.NEXT_PUBLIC_BASE_URL||null});}

@@ -1,0 +1,8 @@
+{
+  "regions": [
+    "iad1"
+  ],
+  "installCommand": "npm install",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": ".next"
+}
