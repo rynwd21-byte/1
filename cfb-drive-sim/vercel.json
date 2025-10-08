@@ -1,0 +1,18 @@
+{
+  "functions": {
+    "index.py": {
+      "runtime": "python3.12",
+      "excludeFiles": "tests/**"
+    }
+  },
+  "crons": [
+    {
+      "path": "/cron/nightly",
+      "schedule": "15 6 * * *"
+    },
+    {
+      "path": "/cron/calibrate",
+      "schedule": "30 6 * * *"
+    }
+  ]
+}
